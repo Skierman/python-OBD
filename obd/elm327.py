@@ -466,7 +466,7 @@ class ELM327:
         messages = self.__protocol(lines)
         return messages
 
-    def __send(self, cmd, delay=None):
+    def __send(self, cmd, delay=0.1):
         """
             unprotected send() function
 
