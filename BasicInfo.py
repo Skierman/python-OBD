@@ -13,4 +13,4 @@ while True:
 	fuel_level = connection.query(fuel_level_cmd).value
 	oil_temp = connection.query(oil_temp_cmd).value
 	load = connection.query(load_cmd).value
-	print(f"Speed: {speed}KM/H, RPM: {rpm}, Engine Load: {load}%, Fuel Level: {fuel_level}%, Oil Temp: {oil_temp} C", end='\r')
+	print(f"Speed: {speed}KM/H, RPM: {rpm}, Engine Load: {load}%, Fuel Level: {fuel_level}%, Oil Temp: {oil_temp} \u00b0C", end='\r')
